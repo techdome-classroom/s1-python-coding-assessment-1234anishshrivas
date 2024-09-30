@@ -1,4 +1,4 @@
-# Function defined previously
+
 def num_islands(grid):
     if not grid:
         return 0
