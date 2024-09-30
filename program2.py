@@ -5,7 +5,7 @@ def matches(secret: str, key: str) -> bool:
     # Base case
     dp[0][0] = True
 
-    # Handle patterns like '*' at the start
+    
     for j in range(1, n + 1):
         if key[j - 1] == '*':
             dp[0][j] = dp[0][j - 1]
