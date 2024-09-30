@@ -14,7 +14,7 @@ def matches(secret: str, key: str) -> bool:
     for i in range(1, m + 1):
         for j in range(1, n + 1):
             if key[j - 1] == '*':
-                # '*' can match empty (dp[i][j-1]) or one or more characters (dp[i-1][j])
+               
                 dp[i][j] = dp[i][j - 1] or dp[i - 1][j]
             elif key[j - 1] == '?' or key[j - 1] == secret[i - 1]:
                 
