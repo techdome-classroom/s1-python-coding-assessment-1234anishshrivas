@@ -60,5 +60,6 @@ def num_islands(grid):
 
     return island_count
 
-# Example usage
+
 print(num_islands(map_example))  # Output: 3
+
